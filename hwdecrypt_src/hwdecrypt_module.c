@@ -42,7 +42,7 @@ static const PyType_Spec HWDKeysetType = {
 };
 
 static const PyMethodDef HWDTopLevel[] = {
-    {"decrypt", decrypt_buffer, METH_FASTCALL, "Decrypt the data within a buffer object."},
+    {"decrypt", (PyCFunction)decrypt_buffer, METH_FASTCALL, "Decrypt the data within a buffer object."},
     {NULL, NULL, 0, NULL}
 };
 
